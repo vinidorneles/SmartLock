@@ -1,0 +1,413 @@
+# =================================================================
+# SMART LOCK SYSTEM - .gitignore
+# =================================================================
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# =================================================================
+# NODE.JS / NPM
+# =================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# =================================================================
+# BACKEND SPECIFIC
+# =================================================================
+
+# Logs
+backend/logs/
+*.log
+logs/
+pids/
+lib-cov/
+
+# PM2 runtime files
+backend/.pm2/
+backend/pids/
+backend/logs/
+backend/pm2.log
+
+# Database dumps
+*.sql.gz
+*.sql.backup
+backup_*.sql
+
+# Uploaded files
+backend/uploads/
+backend/temp/
+
+# SSL certificates (should be managed separately)
+backend/ssl/
+*.pem
+*.key
+*.crt
+
+# Generated QR codes
+backend/qr-codes/
+backend/generated-qr/
+
+# =================================================================
+# REACT NATIVE / MOBILE
+# =================================================================
+
+# React Native
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+
+# Xcode
+mobile/ios/build/
+mobile/ios/DerivedData/
+mobile/ios/*.pbxuser
+mobile/ios/*.mode1v3
+mobile/ios/*.mode2v3
+mobile/ios/*.perspectivev3
+mobile/ios/xcuserdata/
+mobile/ios/*.xccheckout
+mobile/ios/*.moved-aside
+mobile/ios/*.xcuserstate
+mobile/ios/*.xcscmblueprint
+mobile/ios/*.hmap
+mobile/ios/*.ipa
+mobile/ios/*.dSYM.zip
+mobile/ios/*.dSYM
+mobile/ios/Pods/
+
+# Android
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/.idea/
+mobile/android/local.properties
+mobile/android/*.iml
+mobile/android/*.keystore
+mobile/android/app/release/
+mobile/android/app/debug/
+mobile/android/.settings/
+mobile/android/.loadpath
+mobile/android/captures/
+
+# React Native packager cache
+mobile/metro-cache/
+mobile/.metro-health-check*
+
+# Temporary files created by Metro
+mobile/tmp/
+
+# =================================================================
+# WEB ADMIN
+# =================================================================
+
+# React build
+web-admin/build/
+web-admin/dist/
+web-admin/.cache/
+
+# =================================================================
+# DATABASE
+# =================================================================
+
+# PostgreSQL
+*.postgres
+*.pgsql
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# MySQL
+*.mysql
+
+# Database connection files
+database/connection.json
+database/.pgpass
+
+# =================================================================
+# DOCKER & CONTAINERS
+# =================================================================
+
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker volumes
+docker/volumes/
+docker/data/
+
+# =================================================================
+# KUBERNETES
+# =================================================================
+
+# Kubernetes sensitive files
+kubernetes/secrets/
+kubernetes/*.secret.yaml
+kubernetes/configmaps/sensitive/
+
+# Helm
+kubernetes/charts/*.tgz
+kubernetes/charts/*/charts/
+
+# =================================================================
+# MONITORING & LOGGING
+# =================================================================
+
+# Prometheus data
+monitoring/prometheus/data/
+
+# Grafana data
+monitoring/grafana/data/
+monitoring/grafana/logs/
+
+# Log files
+*.log
+*.out
+*.err
+
+# =================================================================
+# HARDWARE
+# =================================================================
+
+# Arduino IDE
+hardware/arduino/.vscode/
+hardware/arduino/build/
+hardware/arduino/libraries/downloaded/
+
+# Python - Raspberry Pi
+hardware/raspberry-pi/__pycache__/
+hardware/raspberry-pi/*.pyc
+hardware/raspberry-pi/.pytest_cache/
+hardware/raspberry-pi/venv/
+hardware/raspberry-pi/.venv/
+
+# =================================================================
+# IDE & EDITORS
+# =================================================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =================================================================
+# OPERATING SYSTEM
+# =================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =================================================================
+# BACKUPS & TEMPORARY FILES
+# =================================================================
+
+# Backups
+backups/db/
+backups/files/
+backups/*.gz
+backups/*.zip
+backups/*.tar
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# =================================================================
+# TESTING
+# =================================================================
+
+# Test results
+test-results/
+coverage/
+.nyc_output/
+
+# Jest
+jest-results.json
+
+# =================================================================
+# DEPLOYMENT & PRODUCTION
+# =================================================================
+
+# Production builds
+build/
+dist/
+
+# PM2
+pm2.log
+.pm2/
+
+# SSL certificates
+ssl/
+certificates/
+
+# =================================================================
+# CUSTOM PROJECT FILES
+# =================================================================
+
+# Hardware configurations
+hardware/config/production.yaml
+hardware/config/local.yaml
+
+# QR code images
+generated-qr/
+qr-codes/
+
+# User uploads
+uploads/user-photos/
+uploads/equipment-photos/
+uploads/documents/
+
+# Reports
+reports/generated/
+reports/*.pdf
+reports/*.xlsx
+
+# Cache
+.cache/
+cache/
+
+# =================================================================
+# END OF .gitignore
+# =================================================================

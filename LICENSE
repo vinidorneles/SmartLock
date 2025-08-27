@@ -1,0 +1,56 @@
+MIT License
+
+Copyright (c) 2025 Smart Lock System
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=======================================================================
+
+This software was developed for educational institutions to manage
+smart locker systems for equipment lending. It includes components for:
+
+- Mobile applications for end users
+- Web administrative dashboard
+- Backend API services
+- Hardware integration for electronic locks
+- Database management and reporting
+
+For commercial use or contributions, please refer to our contribution
+guidelines in the project repository.
+
+Contact: suporte@smartlock.suauniversidade.edu.br
+Project Repository: https://github.com/sua-universidade/smart-lock-system
+
+=======================================================================
+
+Third-party licenses and acknowledgments:
+
+This project uses the following open-source libraries:
+- React Native (MIT License)
+- Node.js and Express.js (MIT License)
+- PostgreSQL (PostgreSQL License)
+- Redis (BSD License)
+- Various npm and yarn packages (see package.json files)
+
+Hardware integration examples use:
+- Arduino libraries (various licenses)
+- Raspberry Pi GPIO libraries (BSD/MIT licenses)
+
+All third-party licenses are respected and maintained in their
+original form within their respective packages.
